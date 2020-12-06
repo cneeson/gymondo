@@ -1,4 +1,4 @@
-# Craig Neeson Gymondo Tech Test
+# Craig Neeson Gymondo TT
 
 ![alt text](docs/screenshot.png)
 
