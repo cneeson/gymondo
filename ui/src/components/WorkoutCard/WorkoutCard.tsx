@@ -3,7 +3,7 @@ import React from 'react';
 import { Badge } from '../Badge';
 import { Flex } from '../Flex';
 import { Text } from '../Text';
-import { PreviewImage, Wrapper } from './styled';
+import { PreviewImage, Wrapper, Title } from './styled';
 import { WorkoutCardProps } from './types';
 
 const WorkoutCard = (props: WorkoutCardProps) => {
@@ -19,7 +19,7 @@ const WorkoutCard = (props: WorkoutCardProps) => {
                 {moment(startDate).format('LL')}
             </Text>
             <Flex px={2} justifyContent='space-between' alignItems='center'>
-                <Text as='h3' mt={1}>{name}</Text>
+                <Title>{name}</Title>
                 <Badge>{category}</Badge>
             </Flex>
         </Wrapper>

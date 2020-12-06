@@ -33,3 +33,14 @@ export const PreviewImage = styled(Image)`
         border-radius: ${radii.lg};
     `}
 `;
+
+export const Title = styled.h3`
+    ${({ theme: { space, colors } }) => `
+        margin: ${space[0]};
+        margin-right: ${space[2]};
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: ${colors.text};
+    `}
+`;
