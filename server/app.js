@@ -2,6 +2,8 @@ const createError = require('http-errors');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cors = require('cors');
+
 require('./database/seed');
 
 const workoutsRouter = require('./routes/workouts');
@@ -13,6 +15,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+/** Enable CORs just for testing against the local UI. */
+app.use(cors());
 
 app.use('/workouts', workoutsRouter);
 

@@ -8,7 +8,6 @@ const app = require('../app');
 const debug = require('debug')('server:server');
 const http = require('http');
 
-
 const port = normalizePort('9000');
 app.set('port', port);
 
