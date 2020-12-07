@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import { useParams, Link } from 'react-router-dom';
 import { Page } from '../../components/Page';
 import { Text } from '../../components/Text';
@@ -23,6 +24,9 @@ const WorkoutDetail = () => {
             {!isLoading && (
                 <Flex mt={8} justifyContent='space-between' flexWrap='wrap'>
                     <Box flex={1} m={3} p={2} borderRadius='lg' bg='light'>
+                        <Text fontSize={0} my='0px'>
+                            {moment(data?.startDate).format('LL')}
+                        </Text>
                         <Flex justifyContent='space-between' alignItems='center'>
                             <Text as='h1'> {data?.name}</Text>
                             <Badge>{data?.category}</Badge>

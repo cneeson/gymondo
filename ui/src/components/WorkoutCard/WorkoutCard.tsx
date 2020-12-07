@@ -15,7 +15,7 @@ const WorkoutCard = (props: WorkoutCardProps) => {
                 src={imageUrl}
                 alt={`${name} thumbnail`}
             />
-              <Text fontSize={0} mx={2} my='0px'>
+            <Text fontSize={0} mx={2} my='0px'>
                 {moment(startDate).format('LL')}
             </Text>
             <Flex px={2} justifyContent='space-between' alignItems='center'>

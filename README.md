@@ -49,6 +49,9 @@ My main priority over the week was to hit all of the functional acceptance crite
 ## Deviations from task guidelines
 - The task guidelines ask for a datepicker filter. I changed this to a simple month dropdown since the smallest useful unit that a user can filter the results by is month, not date. This simplifies things from a querying standpoint, but more importantly it feels like a better use-experience.
 
+## Gotchas
+- There appears to be a problem with the version of create-react app that was used to bootstrap the project. Much of the JSX in the project will be highlighted by the linter (it will not block the build, but makes things harder to read locally), to fix this, nav to the `ui/tsconfig.json` and change `"jsx": "react-jsx"` to `"jsx": "react"`. This version of create-react app will reset the value to `react-jsx` every time the project is run up for some reason.
+
 
 ## Data Sources
 
